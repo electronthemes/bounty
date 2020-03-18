@@ -1,0 +1,32 @@
+{{!< default }}
+
+<div class="main-body section-gap">
+    <div class="container section-gap box_1170">
+        <div class="row">
+            <div class="col-lg-8 post-list">
+                {{#tag}}
+                    <div class="tag-details {{#if feature_image}}has-feature-image{{/if}}" style="background-image: url({{ feature_image }})">
+                        <h1 class="title">{{ name }}</h1>
+                        <p class="desc">{{ description }}</p>
+                    </div>
+                {{/tag}}
+                <!-- Start Post Area -->
+                <section class="post-area">
+                    <div class="row">
+                        <!-- Post card -->
+                        {{#foreach posts}}
+                        {{> "post-card"}}
+                        {{/foreach}}
+                        <!-- pagination -->
+                        <div class="col-lg-12">
+                            {{pagination}}
+                        </div>
+                    </div>
+                </section>
+                <!-- End Post Area -->
+            </div>
+            <!-- Start sidebar Area -->
+            {{> sidebar }}
+        </div>
+    </div>
+</div>

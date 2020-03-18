@@ -1,0 +1,39 @@
+{{#get "posts" filter="featured:true" limit="6" include="authors" as |post|}}
+{{#if posts}}
+<section class="post-slider-area">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="owl-carousel active-post-carusel">
+                    {{#post}}
+                        {{#if feature_image }}
+                        <div class="single-post-carousel" style="background-image: url({{ feature_image }})">
+                            <div class="post-details">
+                                <h2><a class="global-underline" href="{{ url }}">{{ title }}</a></h2>
+                                <div class="post-content">
+                                    <div class="post-meta d-flex">
+                                        {{#primary_author}}
+                                        <div class="thumb">
+                                            <img src="{{ profile_image }}" alt="">
+                                        </div>
+                                        <div class="c-desc">
+                                            <h6><a href="{{ url }}">{{ name }}</a></h6>
+                                        {{/primary_author}}
+                                            <p><span class="lnr lnr-calendar-full"></span>{{ date }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <p>{{excerpt words="25"}}...</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{/if}}
+                    {{/post}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/if}}
+{{/get}}

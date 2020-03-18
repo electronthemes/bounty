@@ -1,0 +1,297 @@
+//--------- start footer Area -------------//
+.footer-area {
+    background: #000;
+    padding-bottom: 50px;
+}
+
+.single-footer-widget {
+    @media (max-width: 991px) {
+        margin-bottom: 30px;
+    }
+    &.instafeed {
+        margin-left: 30px;
+        @media (max-width: 991px) {
+            margin-left: 0;
+        }
+    }
+    p {
+        margin-bottom: 0px;
+        color: $text-color;
+        max-width: 235px;
+    }
+    ul {
+        li {
+            a {
+                line-height: 25px;
+                display: inline-block;
+                color: #828bb2;
+                transition: all 0.3s linear;
+                margin-bottom: 13px;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .instafeed {
+        margin-left: -5px;
+        margin-right: 20px;
+        li {
+            margin: 5px;
+        }
+    }
+    .subscribe_form {
+        padding-top: 25px;
+    }
+    .input-group {
+        display: block !important;
+    }
+    input {
+        width: 100%;
+        border: 1px solid #191919;
+        font-size: 13px;
+        line-height: 30px;
+        padding-right: 40px;
+        height: 40px;
+        color: #999999;
+        background: #191919;
+        padding-left: 20px;
+        @include placeholder {
+            color: #999999;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .sub-btn {
+        @extend .gradient-bg;
+        color: #fff;
+        font-weight: 300;
+        border-radius: 0;
+        line-height: 34px;
+        padding: 4px 11px 0px;
+        cursor: pointer;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+        span {
+            position: relative;
+            top: -1px;
+        }
+    }
+}
+
+.footer_title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 28px;
+    @media (max-width: 991px) {
+        margin-bottom: 15px;
+    }
+}
+
+.border_line {
+    width: 100%;
+    height: 1px;
+    background: #333333;
+    margin-top: 30px;
+}
+
+.footer-bottom {
+    padding-top: 50px;
+    @media (max-width: 991px) {
+        padding-top: 20px;
+    }
+    .footer-text {
+        margin-bottom: 0px;
+        i {
+            color: $primary-color;
+        }
+        a {
+            color: $primary-color;
+        }
+    }
+    .footer-social {
+        text-align: right;
+        a {
+            font-size: 18px;
+            line-height: 30px;
+            color: #82848f;
+            margin-left: 25px;
+            transition: all 0.3s linear;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.f_social_wd {
+    p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .f_social {
+        a {
+            font-size: 14px;
+            color: $white;
+            transition: all 0.3s linear;
+            margin-right: 20px;
+            &:hover {
+                color: $primary-color;
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+.footer-menu{
+    ul.nav-menu{
+        display: flex;
+        flex-direction: column;
+        li{
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+/* subscribe-form */
+.subscribe-form p {
+    margin-top: 30px;
+    color: #bdbdbd;
+}
+.subscribe-form p a {
+    color: #0091ea;
+    text-decoration: underline !important;
+}
+.signup-form p {
+    color: #000 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.signup-form p a {
+    color: #7f00ff;
+    text-decoration: unset !important;
+    transition: 0.3s;
+}
+.signup-form p a:hover {
+    color: #0091ea;
+}
+.subscribe-form {
+    padding: 20px 0;
+    
+}
+
+
+.subscribe-form .form-control {
+    font-size: 14px;
+    height: 60px;
+    width: 100%;
+    font-weight: 300;
+    padding: 10px 10px 10px 15px;
+    border: unset;
+    background-color: #fff;
+    border-radius: unset;
+}
+.subscribe-form .form-control:focus {
+    border-color: unset !important;
+    box-shadow: none !important;
+}
+.subscribe-form .form-control::placeholder {
+    color: #000;
+}
+.message-text {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+.message-success {
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+.success .message-success, .error .message-error {
+    display: block;
+}
+.message-error {
+    color: #d50000;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.button-text{
+    color: #ffffff;
+}
+
+.loading .button-text {
+    display: none;
+}
+
+.loading .button-loader {
+    display: flex;
+}
+.button-loader {
+    display: none;
+}
+
+.button-loader svg path {
+    fill: #fff;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-form button {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+} 
+.subscribe-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-primary {
+    color: #fff;
+    letter-spacing: 0;
+    background: #7c32ff !important;
+    border: 1px solid #7c32ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    padding: 6px 15px;
+}
+
+.btn-primary:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.btn-primary:hover {
+    background: #6e26ee  !important;
+    color: #fff;
+    border-color: #6e26ee;
+}
+
+//--------- end footer Area -------------//

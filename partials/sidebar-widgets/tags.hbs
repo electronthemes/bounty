@@ -1,0 +1,10 @@
+<div class="single-widget tags-widget">
+    <h4 class="title">{{t "Post Tags"}}</h4>
+    <ul>
+        {{#get 'tags' as |tags|}}
+        {{#tags}}
+        <li><a href="{{ url }}">{{ name }}</a></li>
+        {{/tags}}
+        {{/get}}
+    </ul>
+</div>

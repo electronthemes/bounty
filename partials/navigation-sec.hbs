@@ -1,0 +1,59 @@
+<div class="navigation-area">
+    <div class="row">
+        {{#prev_post}}
+        <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center flex-wrap">
+            {{#if feature_image}}
+                <div class="thumb">
+                    <a href="{{url}}">
+                        <img class="img-fluid" srcset="{{img_url feature_image size="s"}} 300w,
+                                    {{img_url feature_image size="m"}} 600w,
+                                    {{img_url feature_image size="l"}} 1000w,
+                                    {{img_url feature_image size="xl"}} 2000w"
+                            sizes="(max-width: 1000px) 600px, 600px"
+                            src="{{img_url feature_image size="m"}}"
+                            alt="{{title}}"
+                        />
+                    </a>
+                </div>
+            {{/if}}
+            <div class="arrow">
+                <a href="{{ url }}"><span class="lnr text-white lnr-arrow-left"></span></a>
+            </div>
+            <div class="detials flex-1">
+                <p>{{t "Prev Post"}}</p>
+                <a href="{{ url }}">
+                    <h4>{{ title }}</h4>
+                </a>
+            </div>
+        </div>
+        {{/prev_post}}
+
+        {{#next_post}}
+        <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center flex-wrap">
+            <div class="detials flex-1">
+                <p>{{t "Next Post"}}</p>
+                <a href="{{ url }}">
+                    <h4>{{ title }}</h4>
+                </a>
+            </div>
+            <div class="arrow">
+                <a href="{{ url }}"><span class="lnr text-white lnr-arrow-right"></span></a>
+            </div>
+                {{#if feature_image}}
+                <div class="thumb">
+                    <a href="{{url}}">
+                        <img class="img-fluid" srcset="{{img_url feature_image size="s"}} 300w,
+                                    {{img_url feature_image size="m"}} 600w,
+                                    {{img_url feature_image size="l"}} 1000w,
+                                    {{img_url feature_image size="xl"}} 2000w"
+                            sizes="(max-width: 1000px) 600px, 600px"
+                            src="{{img_url feature_image size="m"}}"
+                            alt="{{title}}"
+                        />
+                    </a>
+                </div>
+            {{/if}}
+        </div>
+        {{/next_post}}
+    </div>
+</div>

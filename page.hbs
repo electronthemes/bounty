@@ -1,0 +1,46 @@
+{{!< default}}
+
+{{#post}}
+<!-- Start banner Area -->
+<section class="banner-area relative" style="background: linear-gradient(0deg, rgba(128, 80, 250, 0.8), rgba(128, 80, 250, 0.8)), url({{feature_image}}) no-repeat center;background-size: cover;">
+    <div class="overlay overlay-bg"></div>
+    <div class="container box_1170">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    {{title}}
+                </h1>
+                <p class="text-white link-nav">
+                    <a href="{{ @site.url }}">{{t "Home"}}</a>
+                    <span class="lnr lnr-arrow-right"></span>
+                    {{ title }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End banner Area -->
+
+<!-- Blog Area -->
+<section class="blog_area py-5 section-gap single-post-area">
+    <div class="container box_1170">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="main_blog_details">
+                    <div class="user_details">
+                        <div class="float-left">
+                            {{#foreach tags}}
+                                <a href="{{ url }}">{{ name }}</a>
+                            {{/foreach}}
+                        </div>
+                    </div>
+                    {{!-- blog full content --}}
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Blog Area -->
+
+{{/post}}

@@ -1,0 +1,19 @@
+<div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="single-footer-widget f_social_wd">
+        <h6 class="footer_title">Follow Us</h6>
+        <p>Let us be social</p>
+        <div class="f_social">
+
+            {{#if @site.facebook}}
+            <a href="{{ facebook_url }}"><i class="fa fa-facebook"></i></a>
+            {{/if}}
+            
+            {{#if @site.twitter}}
+            <a href="{{ twitter_url }}"><i class="fa fa-twitter"></i></a>
+            {{/if}}
+
+            <a href="https://www.linkedin.com/company/electronthemes"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.pinterest.com/electronthemes/"><i class="fa fa-pinterest-p"></i></a>
+        </div>
+    </div>
+</div>

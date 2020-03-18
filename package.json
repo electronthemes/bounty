@@ -1,0 +1,28 @@
+{
+    "name": "bounty",
+    "description": "a free modern ghost theme",
+    "version": "2.1.1",
+    "engines": {
+        "ghost": ">=3.0.0",
+        "ghost-api": "v3"
+    },
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Electronthemes",
+        "email": "electronthemes@gmail.com",
+        "url": "https://electronthemes.com/"
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "license": "ISC",
+    "config": {
+        "posts_per_page": 6
+    }
+}

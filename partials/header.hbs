@@ -1,0 +1,49 @@
+<!--================ Start header Top Area =================-->
+<div class="header-top">
+    <div class="container box_1170">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <a href="{{ @site.url }}" class="logo">
+                    {{#if @site.logo }}
+                        <img src="{{ @site.logo }}" alt="{{ @site.name }}" />
+                    {{else}}
+                    <img src="{{ asset 'assets/img/logo.png' }}" alt="{{ @site.name }}">
+                    {{/if}}
+                </a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 search-trigger">
+                <a href="#" class="search">
+                    <i class="lnr lnr-magnifier" id="search"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--================ End header top Area =================-->
+
+<!-- Start header Area -->
+<header id="header">
+    <div class="container box_1170 main-menu">
+        <div class="row align-items-center justify-content-center d-flex">
+            <nav id="nav-menu-container">
+                {{navigation}}
+            </nav>
+        </div>
+    </div>
+
+    <div id="search_area">
+        <div class="search_input" id="search_input_box">
+            <div class="container box_1170">
+                <form class="d-flex justify-content-between">
+                    <input type="text" class="form-control" id="search_input" placeholder="Search Here"/>
+                    <button type="submit" class="btn"></button>
+                    <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+                </form>
+        
+            </div>
+        </div>
+        <div class="search-resulrs"></div>
+    </div>
+</header>
+<!-- End header Area -->
+

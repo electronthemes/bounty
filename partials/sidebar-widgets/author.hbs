@@ -1,0 +1,34 @@
+{{#get "authors" limit="1" as |user|}}
+    {{#user}}
+    <div class="single-widget protfolio-widget">
+        <div class="profile-image">
+            {{#if profile_image}}
+                <img class="img-fluid w-100" src="{{ profile_image }}" alt="">
+            {{/if}}
+            <ul class="social-links">
+                {{#if facebook}}
+                <li><a href="{{ facebook_url }}"><i class="fa fa-facebook"></i></a></li>
+                {{/if}}
+
+                {{#if twitter}}
+                <li><a href="{{ twitter_url }}"><i class="fa fa-twitter"></i></a></li>
+                {{/if}}
+
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            </ul>
+        </div>
+        <a href="{{ url }}">
+            <h4>{{ name }}</h4>
+        </a>
+        <p class="p-text">
+            {{ bio }}
+            {{#if website}}
+            <br>
+            <br>
+            <i class="fa fa-globe"></i> <a href="{{ website }}">{{ website }}</a>
+            {{/if}}
+        </p>
+    </div>
+    {{/user}}
+{{/get}}

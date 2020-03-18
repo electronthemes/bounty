@@ -1,0 +1,31 @@
+{{!< default}}
+
+{{!-- featured-slider --}}
+{{> "featured-slider"}}
+
+<div class="main-body section-gap">
+    <div class="container box_1170">
+        <div class="row">
+            <div class="col-lg-8 post-list">
+                <section class="post-area">
+                    <div class="row">
+                        {{!-- post-card --}}
+                        {{#foreach posts}}
+                            {{> "post-card"}}
+                        {{/foreach}}
+                        {{!-- pagination --}}
+                        <div class="col-lg-12">
+                            <nav class="blog-pagination justify-content-center d-flex">
+                                {{pagination}}
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Post Area -->
+            </div>
+            {{!-- sidebar --}}
+            {{> sidebar }}
+        </div>
+    </div>
+</div>
+<!-- End Post Area -->

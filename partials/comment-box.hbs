@@ -1,0 +1,14 @@
+<div class="disqus_comment_box" id="disqus_thread">
+    {{#contentFor "scripts"}}
+        <script>
+            var disqus_shortname = "bounty-ghost"
+            {{#post}}
+                var disqus_config = function () {
+                this.page.url = "{{url absolute="true"}}";
+                this.page.identifier = "ghost-{{comment_id}}";
+                };
+            {{/post}}
+        </script>
+        <script id="dsq-count-scr" src="//" + disqus_shortname + ".disqus.com/count.js" async></script>
+    {{/contentFor}}
+</div>

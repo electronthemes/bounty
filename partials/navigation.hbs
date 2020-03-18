@@ -1,0 +1,15 @@
+{{#if isSecondary}}
+<ul>
+	{{#foreach navigation}}
+	<li><a href="{{url absolute="true"}}">{{label}}</a></li>
+	{{/foreach}}
+</ul>
+{{else}}
+
+<ul class="nav-menu">
+    {{#foreach navigation}}
+    <li class="{{#if current}}menu-active{{/if}}"><a href="{{ url }}">{{ label }}</a></li>
+    {{/foreach}}
+</ul>
+
+{{/if}}

@@ -1,0 +1,44 @@
+<div class="single-widget popular-posts-widget">
+    <div class="jq-tab-wrapper" id="horizontalTab">
+        <div class="jq-tab-menu">
+            <div class="jq-tab-title active" data-tab="1">{{t "Popular"}}</div>
+            <div class="jq-tab-title" data-tab="2">{{t "Latest"}}</div>
+        </div>
+        <div class="jq-tab-content-wrapper">
+            <div class="jq-tab-content active" data-tab="1">
+                {{#get "posts" limit="3" filter="tag:popular"}}
+                    {{#foreach posts}}
+                        <div class="single-popular-post d-flex flex-row">
+                            {{#if feature_image}}
+                            <div class="popular-thumb">
+                                <img class="img-fluid" src="{{ feature_image }}" alt="{{ title }}" />
+                            </div>
+                            {{/if}}
+                            <div class="popular-details">
+                                <h6><a href="{{ url }}">{{ title }}</a></h6>
+                                <p>{{ date }}</p>
+                            </div>
+                        </div>
+                    {{/foreach}}
+                {{/get}}
+            </div>
+            <div class="jq-tab-content" data-tab="2" style="display: none;">                
+                {{#get "posts" limit="4"}}
+                {{#foreach posts}}
+                    <div class="single-popular-post d-flex flex-row">
+                        {{#if feature_image}}
+                            <div class="popular-thumb">
+                                <img class="img-fluid" src="{{ feature_image }}" alt="{{ title }}" />
+                            </div>
+                        {{/if}}
+                        <div class="popular-details">
+                            <h6><a href="{{ url }}">{{ title }}</a></h6>
+                            <p>{{ date }}</p>
+                        </div>
+                    </div>
+                {{/foreach}}
+                {{/get}}
+            </div>
+        </div>
+    </div>
+</div>

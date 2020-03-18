@@ -1,0 +1,14 @@
+<div class="single-widget category-widget">
+    <h4 class="title">{{t "Post Categories"}}</h4>
+    <ul>
+        {{#get 'tags' include="count.posts"}}
+            {{#foreach tags}}
+                <li>
+                    <a href="{{ url }}" class="justify-content-between align-items-center d-flex">
+                        <p><img src="{{ asset 'img/bullet.png' }}" alt="{{ name }}">{{ name }} ({{ count.posts }})</p>
+                    </a>
+                </li>
+            {{/foreach}}
+        {{/get}}
+    </ul>
+</div>

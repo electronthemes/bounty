@@ -1,0 +1,24 @@
+<div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="single-footer-widget">
+        <h6 class="footer_title">Subscribe</h6>
+        <p>Keep yourself updated. Subscribe to our newsletter.</p>
+        
+        <form data-members-form="subscribe">
+            <div class="subscribe-form">
+                <input class="form-control" data-members-email type="email" placeholder="{{t "Enter your email"}}">
+                <button  type="submit" class="btn-primary">
+                    <span class="button-text">{{t "subscribe"}}</span>
+                    <span class="button-loader">{{> "icons/loader"}}</span>
+                </button>
+            </div>
+            <div class="message-text">
+                <div class="message-success">
+                    {{{t "<strong>Great!</strong> Check your inbox and click the link to confirm your subscription"}}}
+                </div>
+                <div class="message-error">
+                    {{t "Please enter a valid email address!"}}
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

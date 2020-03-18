@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+<head>
+
+    {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{!-- Base Meta --}}
+    <title>{{meta_title}}</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- CSS ============================================= -->
+	<link rel="stylesheet" href="{{ asset 'css/linearicons.css' }}">
+	<link rel="stylesheet" href="{{ asset 'css/font-awesome.min.css' }}">
+	<link rel="stylesheet" href="{{ asset 'css/bootstrap.css' }}">
+	<link rel="stylesheet" href="{{ asset 'css/magnific-popup.css' }}">
+	<link rel="stylesheet" href="{{ asset 'css/nice-select.css' }}">
+	<link rel="stylesheet" href="{{ asset 'css/animate.min.css' }}">
+	<link rel="stylesheet" href="{{ asset 'css/owl.carousel.css' }}">
+	<link rel="stylesheet" href="{{ asset 'css/main.css' }}">
+	
+	{{ghost_head}}
+</head>
+
+<body>
+
+	{{> header}}
+	
+	<!-- Start main body Area -->
+	{{{body}}}
+	
+	<!-- Start main body Area -->
+	{{> footer}}
+
+	<script src="{{ asset 'js/vendor/jquery-2.2.4.min.js' }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="{{ asset 'js/vendor/bootstrap.min.js' }}"></script>
+	<script src="{{ asset 'js/easing.min.js' }}"></script>
+	<script src="{{ asset 'js/hoverIntent.js' }}"></script>
+	<script src="{{ asset 'js/superfish.min.js' }}"></script>
+	<script src="{{ asset 'js/jquery.magnific-popup.min.js' }}"></script>
+	<script src="{{ asset 'js/owl.carousel.min.js' }}"></script>
+	<script src="{{ asset 'js/jquery.tabs.min.js' }}"></script>
+	<script src="{{ asset 'js/jquery.nice-select.min.js' }}"></script>
+	<script src="{{ asset 'js/waypoints.min.js' }}"></script>
+	<script src="{{ asset 'js/ghost-finder.js' }}"></script>
+	<script src="{{ asset 'js/prism.js' }}"></script>
+	<script src="{{ asset 'js/lazy-loading-disqus.js' }}"></script>
+	<script src="{{ asset 'js/medium-zoom.min.js' }}"></script>
+	<script src="{{ asset 'js/jquery.fitvids.js' }}"></script>
+	<script src="{{ asset 'js/main.js' }}"></script>
+    
+    {{{block "scripts"}}}
+	{{ghost_foot}}
+</body>
+
+</html>
