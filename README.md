@@ -1,5 +1,9 @@
 # Bounty
-Bounty is a magazine ghost theme. This theme is created for Bloggers, Authors, Publishers, Writers, 
+Bounty is a magazine ghost theme. This theme is created for Bloggers, Authors, Publishers, Writers
+
+If you find this theme useful, please consider to make a donation to support its development! 🙏🏼
+
+<a href="https://www.buymeacoffee.com/iIChAFZ" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-violet.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
 
 # Features
 - Clean Design
