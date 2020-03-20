@@ -1,5 +1,8 @@
 # Bounty
-Bounty is a magazine ghost theme. This theme is created for Bloggers, Authors, Publishers, Writers,
+Bounty is a **free** magazine ghost theme. This theme is created for Bloggers, Authors, Publishers, Writers. It is easy to customise and comfortable to use.
+
+## Preview
+You can see a live demo here: http://bounty.electronthemes-ghost.com/
 
 # Features
 - Clean Design
