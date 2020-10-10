@@ -246,6 +246,14 @@
                 color: $title-color;
             }
         }
+
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
         .blog-meta {
             margin-top: 15px;
             .m-gap {

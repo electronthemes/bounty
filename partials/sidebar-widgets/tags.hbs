@@ -1,10 +1,12 @@
-<div class="single-widget tags-widget">
-    <h4 class="title">{{t "Post Tags"}}</h4>
-    <ul>
-        {{#get 'tags' as |tags|}}
-        {{#tags}}
-        <li><a href="{{ url }}">{{ name }}</a></li>
-        {{/tags}}
-        {{/get}}
-    </ul>
-</div>
+{{#get 'tags' limit="all"}}
+{{#if tags}}
+    <div class="single-widget tags-widget">
+        <h4 class="title">{{t "Post Tags"}}</h4>
+        <ul>
+            {{#foreach tags visibility="public"}}
+            <li><a href="{{ url }}">{{ name }}</a></li>
+            {{/foreach}}
+        </ul>
+    </div>
+{{/if}}
+{{/get}}
