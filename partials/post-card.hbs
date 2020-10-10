@@ -15,7 +15,7 @@
         {{/if}}
         <div class="post-details">
             <h4><a href="{{ url }}">{{ title }}</a></h4>
-            <p>{{ excerpt }}</p>
+            <p>{{ excerpt words="25" }}</p>
             <div class="blog-meta d-flex justify-content-between">
                 <a href="javascript:void(0)" class="m-gap"><span class="lnr lnr-calendar-full"></span>{{ date }}</a>
                 <a href="javascript:void(0)" class="m-gap"><span class="lnr lnr-clock"></span>{{reading_time minute=(t "a hot minute") minutes=(t "% minutes")}}</a>

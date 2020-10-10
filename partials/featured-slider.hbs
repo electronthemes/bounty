@@ -13,14 +13,16 @@
                                 <div class="post-content">
                                     <div class="post-meta d-flex">
                                         {{#primary_author}}
+                                        {{#if profile_image}}
                                         <div class="thumb">
-                                            <img src="{{ profile_image }}" alt="">
+                                            <a href="{{url}}"><img src="{{ profile_image }}" alt="{{name}}"></a>
                                         </div>
+                                        {{/if}}
                                         <div class="c-desc">
                                             <h6><a href="{{ url }}">{{ name }}</a></h6>
-                                        {{/primary_author}}
                                             <p><span class="lnr lnr-calendar-full"></span>{{ date }}</p>
                                         </div>
+                                        {{/primary_author}}
                                     </div>
                                 </div>
                                 <div class="details">
