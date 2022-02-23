@@ -1,10 +1,10 @@
 {
     "name": "bounty",
     "description": "a free modern ghost theme",
-    "version": "2.1.1",
+    "version": "2.2.0",
     "engines": {
-        "ghost": ">=3.0.0",
-        "ghost-api": "v3"
+        "ghost": ">=4.0.0",
+        "ghost-api": "v4"
     },
     "main": "index.js",
     "scripts": {
@@ -23,6 +23,42 @@
     ],
     "license": "ISC",
     "config": {
-        "posts_per_page": 6
+        "posts_per_page": 6,
+        "card_assets": true,
+        "custom": {
+            "site_footer": {
+                "type": "text",
+                "default": "bounty. All copyright reserved by Electronthemes & Published with Ghost."
+            },
+            "about_site_footer": {
+                "type": "text",
+                "default": "We provide premium and free wordpress and ghost themes. We started our journey from 2018 and we are increasing our products for our valuable customers. We have a hard working and innovative team who are always creating new and customer perspective products."
+            },
+            "show_featured_posts": {
+                "type": "boolean",
+                "default": true,
+                "group": "homepage"
+            },
+            "show_author": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
+            "show_social-share": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
+            "show_navigation-section": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
+            "show_comment-box": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            }
+        }
     }
 }

@@ -391,6 +391,15 @@
 */
 
 .main_blog_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > * {
+        width: 100%;
+        height: auto;
+    }
     h1,
     h2,
     h3,
@@ -873,6 +882,431 @@
 
 .disqus_comment_box{
     padding: 20px 0;
+}
+
+/*
+    New updates for the articles
+*/
+
+/*
+    New updates for the articles
+*/
+
+body{
+    &.post-template {
+        overflow-x: hidden;
+    }
+}
+
+body{
+    &.page-template {
+        overflow-x: hidden;
+    }
+}
+
+.post-template{
+    .kg-header-card {
+        padding: 2vmin 2em;
+    }
+}
+
+.page-template{
+    .kg-width-full {
+        width:100vw;
+    }
+    .main_blog_details {
+        p {
+            margin-bottom: 15px !important;
+        }
+    }
+}
+
+.post-with-sidebar{
+    .main_blog_details{
+        .kg-width-full {
+            width:unset;
+        }
+    }
+}
+
+.main_blog_details {
+    .kg-image-card,
+    .kg-product-card {
+        justify-content: flex-start;
+    }
+    .kg-product-card-rating {
+        span {
+            color: #FFC700;
+        }
+    }
+
+    .kg-card {
+        margin-bottom: 30px;
+        a {
+            border-bottom: 1px solid transparent;
+        }
+    }
+    .kg-audio-current-time {
+        color: #ababab;
+    }
+    .kg-audio-time {
+        color: #ababab;
+    }
+    .kg-audio-time {
+        color: #ababab;
+    }
+    .kg-audio-duration {
+        color: #ababab;
+    }
+    /* NFT Card Style */
+    .kg-nft-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto 30px;
+        &:hover {
+            color: #333;
+            opacity: 1.0;
+            transition: none;
+        }
+        * {
+            position: static;
+        }
+        p.kg-nft-description {
+            font-family: inherit;
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 20px 0 0;
+            color: #222;
+        }
+    }
+    .kg-nft-card-container {
+        position: static;
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        box-shadow: 0 2px 6px -2px rgb(0 0 0 / 10%), 0 0 1px rgb(0 0 0 / 40%);
+        width: 100%;
+        max-width: 512px;
+        color: #222;
+        background: #fff;
+        border-radius: 5px;
+        transition: none;
+    }
+    .kg-nft-metadata {
+        padding: 20px;
+        width: 100%;
+    }
+    .kg-nft-image {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+    }
+    .kg-nft-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        h4.kg-nft-title {
+            font-family: inherit;
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 1.3em;
+            min-width: unset;
+            max-width: unset;
+            margin: 0;
+            color: #222;
+        }
+    }
+    .kg-nft-opensea-logo {
+        margin-top: 2px;
+        width: 100px;
+        object-fit: scale-down;
+    }
+    .kg-nft-creator {
+        font-family: inherit;
+        line-height: 1.4em;
+        margin: 4px 0 0;
+        color: #ababab;
+        span {
+            font-weight: 500;
+            color: #222;
+        }
+    }    
+
+    /* Button Card Style */
+    .kg-button-card {
+        margin-bottom: 30px;
+        display: flex;
+        width: auto;
+        a {
+            &.kg-btn-accent {
+                background-color: var(--ghost-accent-color);
+                color: var(--color-white);
+                border-color: var(--ghost-accent-color);
+                padding: 8px 25px;
+                border-radius: 4px;
+                font-size: 1rem;
+            }
+        }
+        &.kg-align-center {
+            align-self: center;
+        }
+        &.kg-align-left {
+            align-self: flex-start;
+        }
+    }
+
+    .kg-audio-card{
+        margin-bottom: 30px;
+    }
+
+    /* Toggle Card Style */
+    .kg-toggle-card {
+        margin-bottom: 30px;
+        background: transparent;
+        box-shadow: inset 0 0 0 1px rgba(124, 139, 154, 0.25);
+        border-radius: 4px;
+
+        + .kg-toggle-card {
+            margin-top: -10px;
+        }
+    }
+    .kg-toggle-card[data-kg-toggle-state='open'],
+    .kg-toggle-card.kg-toggle-open {
+        .kg-toggle-content {
+            height: auto;
+            opacity: 1;
+            transition: opacity 1s ease, top 0.35s ease;
+            top: 0;
+            p{
+                font-size: 17px;
+                line-height: 1.6;
+            }
+        }
+        svg {
+            transform: rotate(-180deg);
+        }
+    }
+    .kg-toggle-content {
+        height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease, top 0.35s ease;
+        opacity: 0;
+        top: -0.5em;
+        position: relative;
+        p {
+            margin-bottom: 15px;
+            font-size: 17px;
+            line-height: 1.6;
+            &:first-of-type {
+                margin-top: 0.5em;
+            }
+        }
+    }
+
+    .kg-toggle-heading {
+        svg {
+            width: 14px;
+            color: var(--color-text);
+            transition: all 0.3s;
+            transform: rotate(0deg);
+        }
+    }
+    .kg-toggle-heading {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-items: center;
+        path {
+            fill: none;
+            stroke: currentcolor;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 1.5;
+            fill-rule: evenodd;
+        }
+        .kg-toggle-heading-text {
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 1.5;
+            font-size: 1.125rem;
+            color: var(--light-dark);
+        }
+    }
+    .kg-toggle-card-icon {
+        height: 24px;
+        width: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1em;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    /* Callout Card Style */
+    .kg-callout-card {
+        display: flex;
+        padding: 20px;
+        border-radius: 3px;
+        margin-bottom: 30px;
+        margin-top: 0 !important;
+    }
+    .kg-callout-card-grey {
+        background: rgba(124, 139, 154, 0.13);
+    }
+    .kg-callout-card-white {
+        background: transparent;
+        box-shadow: inset 0 0 0 1px rgba(124, 139, 154, 0.25);
+    }
+    .kg-callout-card-blue {
+        background: rgba(33, 172, 232, 0.12);
+    }
+    .kg-callout-card-green {
+        background: rgba(52, 183, 67, 0.12);
+    }
+    .kg-callout-card-yellow {
+        background: rgba(240, 165, 15, 0.13);
+    }
+    .kg-callout-card-red {
+        background: rgba(209, 46, 46, 0.11);
+    }
+    .kg-callout-card-pink {
+        background: rgba(225, 71, 174, 0.11);
+    }
+    .kg-callout-card-purple {
+        background: rgba(135, 85, 236, 0.12);
+    }
+    .kg-callout-card-accent {
+        background: var(--ghost-accent-color);
+        color: #fff;
+        a {
+            color: #fff;
+        }
+    }
+    .kg-callout-emoji {
+        padding-right: 0.8em;
+        line-height: 1.3em;
+        font-size: 1.2em;
+    }
+    .kg-callout-text {
+        font-size: 1.125rem;
+        line-height: 1.6;
+    }
+
+    .kg-callout-text {
+        font-size: 17px;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+    .kg-callout-card div.kg-callout-text {
+        font-size: 17px;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+
+    .kg-width-full {
+        width:100vw;
+    }
+
+    /* Blockquote style */
+    .kg-blockquote-alt {
+        font-size: 1.5em;
+        font-style: italic;
+        line-height: 1.7em;
+        text-align: center;
+        padding: 0 2.5em;
+        border-left: 0;
+    }
+
+    @media (max-width: 800px) {
+        .kg-blockquote-alt {
+            font-size: 1.4em;
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .kg-blockquote-alt {
+            font-size: 1.2em;
+            padding-left: 1.75em;
+            padding-right: 1.75em;
+        }
+    }
+
+    /* Audio Player custom style */
+    .kg-audio-play-icon,
+    .kg-audio-pause-icon,
+    .kg-audio-unmute-icon,
+    .kg-audio-mute-icon{
+        svg{
+            fill: var(--light-dark);
+        }
+    }
+    .kg-audio-playback-rate{
+        color: var(--light-dark);
+    }
+    .kg-audio-volume-slider,
+    .kg-audio-seek-slider{
+        &::before{
+            background-color: var(--light-dark);
+        }
+    }
+    // kg-video
+    .kg-video-large-play-icon {
+        width: 72px !important;
+        height: 72px;
+        padding: 0;
+        background: rgba(0,0,0,.5);
+        border-radius: 50%;
+    }
+
+    .kg-callout-card-accent {
+        background: var(--ghost-accent-color);
+        color: #fff;
+        .kg-callout-text {
+            color: #fff !important;
+        }
+        a {
+            color: #fff;
+        }
+    }
+}
+
+[data-theme='dark'] {
+    .main_blog_details {
+        .kg-callout-card{
+            color: #fff;
+        }
+        .kg-callout-card-blue {
+            background: rgba(33, 172, 232, 0.5);
+        }
+        .kg-callout-card-green {
+            background: rgba(52, 183, 67, 1);
+        }
+        .kg-callout-card-yellow {
+            background: rgba(240, 165, 15, 0.6);
+        }
+        .kg-callout-card-red {
+            background: rgba(209, 46, 46, 1);
+        }
+        .kg-callout-card-pink {
+            background: rgba(225, 71, 174, 1);
+        }
+        .kg-callout-card-purple {
+            background: rgba(135, 85, 236, 1);
+        }
+    }
 }
 
 

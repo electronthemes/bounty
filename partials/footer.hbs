@@ -9,7 +9,11 @@
         </div>
         <div class="row footer-bottom d-flex justify-content-between align-items-center">
             <p class="col-lg-12 footer-text text-center">
+                {{#if @custom.site_footer}}
+                <p>&copy; {{date format="YYYY"}}&nbsp;{{@site.title}} - {{@custom.site_footer}}</p>
+                {{else}}
                 {{{t "© Copyright 2020 bounty. Published with {website}" website="<a target=\"_blank\" href=\"https://electronthemes.com/\">Electronthemes</a>"}}}
+                {{/if}}
             </p>
         </div>
     </div>

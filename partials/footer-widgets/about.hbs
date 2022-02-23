@@ -1,6 +1,8 @@
 <div class="col-lg-3 col-md-6 col-sm-6">
     <div class="single-footer-widget">
         <h6 class="footer_title">About Us</h6>
-        <p>We provide premium and free wordpress and ghost themes. We started our journey from 2018 and we are increasing our products for our valuable customers. We have a hard working and innovative team who are always creating new and customer perspective products.</p>
+        {{#if @custom.about_site_footer}}
+        <p>{{@custom.about_site_footer}}</p>
+        {{/if}}
     </div>
 </div>

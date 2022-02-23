@@ -35,6 +35,7 @@
                         </div>
                     </div>
                     <div class="media">
+                        {{#if @custom.show_author}}
                         {{#primary_author}}
                         <div class="d-flex align-items-center author-image">
                             <img src="{{ profile_image }}" alt="{{ name }}">
@@ -46,16 +47,23 @@
                             {{/primary_author}}
                             <p>{{ date }}</p>
                         </div>
+                        {{/if}}
                     </div>
                     <!-- Blog full content -->
                     {{ content }}
                     {{!-- Social share --}}
+                    {{#if @custom.show_social-share}}
                     {{> social-share}}
+                    {{/if}}
                 </div>
                 {{!-- navigation-sec --}}
+                {{#if @custom.show_navigation-section}}
                 {{> navigation-sec}}
+                {{/if}}
                 {{!-- comment-box --}}
+                {{#if @custom.show_comment-box}}
                 {{> comment-box}}
+                {{/if}}
             </div>
         </div>
     </div>
