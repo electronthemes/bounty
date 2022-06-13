@@ -189,38 +189,6 @@ $(document).ready(function() {
     mediumZoom(images)
 
 
-    // top stories carousel js //
-    $('.active-stories-carousel').owlCarousel({
-        items: 6,
-        loop: true,
-        margin: 0,
-        dots: false,
-        nav: false,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            480: {
-                items: 1,
-            },
-            650: {
-                items: 2,
-            },
-            768: {
-                items: 2,
-            },
-            992: {
-                items: 3,
-            },
-            1200: {
-                items: 4,
-            },
-            1681: {
-                items: 6,
-            },
-        },
-    })
-
     // post carousel js //
     $('.active-post-carusel').owlCarousel({
         items: 3,
@@ -249,6 +217,8 @@ $(document).ready(function() {
             },
         },
     })
+
+    
 })
 
 

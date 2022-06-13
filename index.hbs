@@ -2,7 +2,9 @@
 
 {{!-- featured-slider --}}
 {{#if @custom.show_featured_posts}}
+{{#is "home"}}
 {{> "featured-slider"}}
+{{/is}}
 {{/if}}
 
 <div class="main-body section-gap">

@@ -1,10 +1,9 @@
 {
     "name": "bounty",
     "description": "a free modern ghost theme",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "engines": {
-        "ghost": ">=4.0.0",
-        "ghost-api": "v4"
+        "ghost": ">=5.0.0"
     },
     "main": "index.js",
     "scripts": {

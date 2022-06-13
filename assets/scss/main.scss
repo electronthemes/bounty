@@ -188,6 +188,12 @@ figure.kg-card {
     }
 }
 
+.kg-card {
+    .kg-image{
+        height: 100%;
+    }
+}
+
 .medium-zoom-image {
     z-index: 6;
 }
@@ -268,3 +274,4 @@ figure.kg-card {
         font-size: 26px;
     }
 }
+
