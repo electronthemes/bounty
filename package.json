@@ -1,7 +1,7 @@
 {
     "name": "bounty",
     "description": "a free modern ghost theme",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "engines": {
         "ghost": ">=5.0.0"
     },
@@ -9,7 +9,6 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [],
     "author": {
         "name": "Electronthemes",
         "email": "electronthemes@gmail.com",
@@ -43,17 +42,17 @@
                 "default": true,
                 "group": "post"
             },
-            "show_social-share": {
+            "show_social_share": {
                 "type": "boolean",
                 "default": true,
                 "group": "post"
             },
-            "show_navigation-section": {
+            "show_navigation_section": {
                 "type": "boolean",
                 "default": true,
                 "group": "post"
             },
-            "show_comment-box": {
+            "show_comment_box": {
                 "type": "boolean",
                 "default": true,
                 "group": "post"

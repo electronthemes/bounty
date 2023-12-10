@@ -2,6 +2,7 @@
 
 {{#post}}
 <!-- Start banner Area -->
+{{#match @page.show_title_and_feature_image}}
 <section class="banner-area relative" style="background: linear-gradient(0deg, rgba(128, 80, 250, 0.8), rgba(128, 80, 250, 0.8)), url({{feature_image}}) no-repeat center;background-size: cover;">
     <div class="overlay overlay-bg"></div>
     <div class="container box_1170">
@@ -19,6 +20,7 @@
         </div>
     </div>
 </section>
+{{/match}}
 <!-- End banner Area -->
 
 <!-- Blog Area -->
@@ -27,6 +29,7 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="main_blog_details">
+                    {{#match @page.show_title_and_feature_image}}
                     <div class="user_details">
                         <div class="float-left">
                             {{#foreach tags}}
@@ -34,6 +37,7 @@
                             {{/foreach}}
                         </div>
                     </div>
+                    {{/match}}
                     {{!-- blog full content --}}
                     {{ content }}
                 </div>
